@@ -24,8 +24,7 @@ pip install opencv-python
 The training code reads images from a directory of image files. We have prepared the codes in script folder to download datasets.
 For using models during training, please download the corresponding [model card](https://github.com/openai/guided-diffusion).
 
-## UNconditional generation
-### Training models
+## Training models
 
 The scripts are based on [cold diffusion](https://github.com/arpitbansal297/Cold-Diffusion-Models), and we have separate scripts for training models on each dataset i.e <dataset>_<resolution>.py. 
 
@@ -40,12 +39,12 @@ Below is an example script for training denoising diffusion models.
 python <dataset>_<resolution>.py --time_steps 200 --sampling_routine 'CS' --save_folder <Path to save model folder> --data_path <Path to train data folder>
 ```
 
-### Testing models
+## Testing models
 Below is an example script for testing denoising diffusion models.
 
 ```bash
 python cifar10_test.py --time_steps 50 --sampling_routine 'CS' --save_folder <Path to save results> --data_path <Path to data folder> --test_type test_data
 ```
-## conditional generation
+
 
 
