@@ -7,8 +7,8 @@ The repository is based on [DDIM](https://github.com/ermongroup/ddim) tuned by [
 We use the same installation as [ADM](https://github.com/openai/guided-diffusion)
 
 ```bash
-git clone https://github.com/forever208/DDPM-IP.git
-cd DDPM-IP
+git clone https://github.com/forever208/DDIM-IP.git
+cd DDIM-IP
 conda create -n ADM python=3.8
 conda activate ADM
 pip install -e .
