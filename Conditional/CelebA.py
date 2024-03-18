@@ -66,7 +66,7 @@ diffusion = torch.nn.DataParallel(diffusion, device_ids=range(torch.cuda.device_
 trainer = Trainer(
     diffusion,
     '../../root_celeba/',
-    image_size = 32,
+    image_size = 128,
     train_batch_size = 32,
     train_lr = 2e-5,
     train_num_steps = args.train_steps,         # total training steps
