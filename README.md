@@ -19,3 +19,7 @@ conda install numpy
 pip install Pillow
 pip install opencv-python
 
+##Preparing Data and ADM base models.
+The training code reads images from a directory of image files. We have prepared the codes in script folder to download datasets.
+
+[ADM](https://github.com/openai/guided-diffusion)
