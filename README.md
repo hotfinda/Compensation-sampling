@@ -5,3 +5,15 @@ The repository is based on [DDIM](https://github.com/ermongroup/ddim) tuned by [
 
 ## Installation
 We use the same installation as [ADM](https://github.com/openai/guided-diffusion)
+
+git clone https://github.com/forever208/DDPM-IP.git
+cd DDPM-IP
+conda create -n ADM python=3.8
+conda activate ADM
+pip install -e .
+
+####install missing packages
+conda install mpi4py
+conda install numpy
+pip install Pillow
+pip install opencv-python
