@@ -35,6 +35,7 @@ The --sampling_routine argument allows you to switch between different sampling 
 The --save_folder argument indicates the path to save the trained model, and the training data samples produced to keep track of progress. The frequency of saving and progress tracking can be modified in the Trainer class defined in denoising_diffusion_pytorch.py. The data_path argument specifies the path to the training data folder produced in the dataset preparation step.
 
 Below is an example script for training denoising diffusion models.
+
 ```bash
 python <dataset>_<resolution>.py --time_steps 200 --sampling_routine 'CS' --save_folder <Path to save model folder> --data_path <Path to train data folder>
 ```
