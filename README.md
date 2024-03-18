@@ -40,10 +40,15 @@ python <dataset>_<resolution>.py --time_steps 200 --sampling_routine 'CS' --save
 ```
 
 ## Testing models
-Below is an example script for testing denoising diffusion models.
+Below is an example of generating iamges for testing denoising diffusion models:
 
 ```bash
 python cifar10_test.py --time_steps 50 --sampling_routine 'CS' --save_folder <Path to save results> --data_path <Path to data folder> --test_type test_data
+```
+
+For testing the FID score, here is an example:
+```bash
+python cifar10_test.py --time_steps 50 --sampling_routine 'CS' --save_folder <Path to save results> --data_path <Path to data folder> --test_type 'test_sample_and_save_for_fid'
 ```
 
 
